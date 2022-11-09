@@ -335,7 +335,7 @@ column-gap: .5rem;
     transform: translateX(.25rem);
 }
 .footer__form button{
-    padding: 10;
+    padding: 5;
     margin: 0;
     text-align: center;
 }
@@ -556,12 +556,12 @@ display: grid;
 }
 .footer__form{
     flex-direction: column;
-    gap: 1.25rem;
-    width: 10px;
-    height: 10px;
+    gap: 1.12rem;
+    /* width: 10px;
+    height: 10px; */
 }
 .footer__input{
-    padding: 20px 20px 20px 20px;
+    padding: 20px 50px 20px 24px;
     border: 2px solid var(--first-color-light);
     background: transparent;
     color: var(--text-color);
@@ -617,7 +617,7 @@ display: grid;
 }
 .footer__message{
     position: absolute;
-    transform: translateY(1rem);
+    transform: translateY(23rem);
 }
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
