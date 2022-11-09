@@ -82,5 +82,40 @@ sr.reveal('.logos__img, .program__card, .pricing__card',{interval:100})
 sr.reveal('.choose__img',{origin:'left'})
 sr.reveal('.choose__content',{origin:'right'})
 
+// *=============== Email JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message'),
+    contactUser = document.getElementById('contact-user')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    //checking if user has entered something or not
+    if(contactUser.value === ''){
+        contactMessage.classList.remove('colour-red')
+        contactMessage.classList.add('color-#EDDBC0')
+
+     //show message
+     contactMessage.textContent = 'You must enter your email👆'   
+     //remove message
+     setTimeout(() => {
+      contactMessage.textContent = ''  
+     },2000)
+    }else{
+   emailjs.sendForm('service_xan3lep','template_sx9yfgu', '#contact-form', 'MHtdP6SbD73980T7H')
+      .then(() => {
+        contactMessage.classList.add('color-green')
+        contactMessage.textContent = 'You registered successfully 💪'
+        setTimeout(() => {
+            contactMessage.textContent = ''  
+           }, 2000)
+           
+        })
+        contactUser.value = '' 
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
+
+  
 
 
