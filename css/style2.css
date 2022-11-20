@@ -337,6 +337,8 @@ column-gap: .5rem;
 .footer__form button{
     padding: 5;
     margin: 0;
+    height:1vh;
+    padding-bottom: 10%;
     text-align: center;
 }
 /*=============== LOGOS ===============*/
@@ -561,11 +563,12 @@ display: grid;
     height: 10px; */
 }
 .footer__input{
-    padding: 20px 50px 20px 24px;
+    padding: 20px 50px 20px 24px; 
     border: 2px solid var(--first-color-light);
     background: transparent;
     color: var(--text-color);
     outline: none;
+    height:9vh;
     
 }
 .footer__content,
