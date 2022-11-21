@@ -96,11 +96,11 @@ const sendEmail = (e) =>{
         contactMessage.classList.add('color-#EDDBC0')
 
      //show message
-     contactMessage.textContent = 'You must enter your email👆'   
+     contactMessage.textContent = 'You must enter your email👇'   
      //remove message
      setTimeout(() => {
       contactMessage.textContent = ''  
-     },2000)
+     },1000)
     }else{
    emailjs.sendForm('service_xan3lep','template_sx9yfgu', '#contact-form', 'MHtdP6SbD73980T7H')
       .then(() => {
@@ -108,7 +108,7 @@ const sendEmail = (e) =>{
         contactMessage.textContent = 'You registered successfully 💪'
         setTimeout(() => {
             contactMessage.textContent = ''  
-           }, 2000)
+           }, 1000)
            
         })
         contactUser.value = '' 
