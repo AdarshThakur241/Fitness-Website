@@ -620,7 +620,17 @@ display: grid;
 }
 .footer__message{
     position: absolute;
-    transform: translateY(23rem);
+    
+    transform: translateY(7rem);
+}
+@media (max-width:754px) {
+    .footer__message{
+        position: absolute;
+        top:9%;
+        transform: translateY(7rem);
+    }
+    
+    
 }
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
