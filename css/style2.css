@@ -559,8 +559,7 @@ display: grid;
 .footer__form{
     flex-direction: column;
     gap: 1.12rem;
-    /* width: 10px;
-    height: 10px; */
+    
 }
 .footer__input{
     padding: 20px 50px 20px 24px; 
@@ -568,7 +567,7 @@ display: grid;
     background: transparent;
     color: var(--text-color);
     outline: none;
-    height:9vh;
+    height:7.7vh;
     
 }
 .footer__content,
